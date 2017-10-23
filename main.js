@@ -4,7 +4,7 @@ const fs = require('fs');
 const { exec } = require('child_process');
 
 
-const artistName = "patto";
+const artistName = "troutsworth";
 const faURL = "http://faexport.boothale.net/user/"+artistName+"/gallery.json?full=1&page=";
 const e6URL = "https://e621.net/post/index.json?limit=500&tags="+artistName+"&page=";
 
@@ -191,7 +191,7 @@ function saveE62toIQDB(imageJSON, callback){
 }
 
 function download_JSON_Array(url, waitTime, callback){
-	let options = {headers: { 'User-Agent': 'Artist compare v0.1 (created by idem)' }};
+	let options = {headers: { 'User-Agent': 'Artist compare v1.0 (created by idem)' }};
 	let site = url.split('/')[2];
 	let returnArray = [];
 	let pageCounter = 0;
